@@ -1,6 +1,33 @@
 {
   "compilerOptions": {
     "target": "es2022",
-    "lib": ["ES2024", "DOM", "DOM.Iterable"]
-  }
+    "lib": ["ES2024", "DOM", "DOM.Iterable"],
+    "rootDir": "./",
+    "moduleResolution": "bundler",
+    "baseUrl": "./",
+    "rootDirs": [
+      "src",
+      "utils"
+    ],
+    "typeRoots": [
+      "types"
+    ],
+    "types": [
+      "gtag.js",
+      "facebook-pixel"
+    ],
+    "strict": true
+  },
+
+  "include": [
+    "src/**/*.ts",
+    "types/**/*.ts",
+    "utils/**/*.ts",
+  ],
+
+  "exclude": [
+    "dev",
+    "dist",
+    "node_modules",
+  ]
 }

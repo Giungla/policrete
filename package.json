@@ -16,6 +16,9 @@
   },
   "scripts": {
     "build-contact-lead-dev": "node build-commands/build-for-development.js --name=contact-lead",
-    "build-contact-lead-prod": "node build-commands/build-for-production.js --name=contact-lead"
+    "build-contact-lead-prod": "node build-commands/build-for-production.js --name=contact-lead",
+
+    "build-page-view-dev": "node build-commands/build-for-development.js --name=page-view",
+    "build-page-view-prod": "node build-commands/build-for-production.js --name=page-view"
   }
 }
